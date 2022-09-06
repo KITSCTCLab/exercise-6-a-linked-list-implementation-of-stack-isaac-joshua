@@ -31,7 +31,10 @@ class Stack:
       while(temp.next != None):
         print(temp.data, end = "=>")
         temp = temp.next
-   
+      else:
+        print(temp.data,"None", sep="=>")
+    else:
+      print("None")
       
     
 
@@ -45,6 +48,5 @@ data = input_data.split(',')
 for i in range(len(operations)):
   if operations[i] == "push":
     stack.push(int(data[i]))
-  elif operations[i] == "pop":
-    stack.pop()
+
 stack.status()
