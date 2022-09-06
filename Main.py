@@ -4,7 +4,9 @@ class Node:
     self.next = None
 
 
-
+class Stack:
+  def __init__(self):
+    self.head = None
 
   def push(self, data) -> None:
     # Write your code here
@@ -29,10 +31,7 @@ class Node:
       while(temp.next != None):
         print(temp.data, end = "=>")
         temp = temp.next
-      else:
-        print(temp.data,"None", sep="=>")
-    else:
-      print("None")
+   
       
     
 
